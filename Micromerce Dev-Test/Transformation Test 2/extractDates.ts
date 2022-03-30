@@ -19,6 +19,7 @@ export const extractDates = (customer) => {
         .map((e) => e.trim())
         .map((e) => {
             const bothDates = e.split('-').map(e => e.trim)
+            if (e[0].length !== 10 || e[1].length !== 10)
             return {
                 startDate: e[0],
                 endDate: e[1]
