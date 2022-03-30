@@ -3,8 +3,14 @@ import customer2 from './customer2.json'
 import customer3 from './customer3.json'
 import customer4 from './customer4.json'
 
-const extractDates = (customer) => {
-    return customer
+//sollen wir das hier schon providen?
+type bonus = {
+    start: string,
+    end: string
+}
+
+const extractDates = (customer): bonus[] => {
+    return customer.ListeTimeStopBonusTime
     // your code here
 }
 
