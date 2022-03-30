@@ -56,5 +56,5 @@
   "PersonMarketingAddress" : "NULL",
   "PersonMarketingMobileCall" : "NULL",
   "PersonMarketingMobileMessenger" : "NULL",
-  "PersonMarketingPhoneCall" : "NULL",
+  "PersonMarketingPhoneCall" : "NULL"
 }

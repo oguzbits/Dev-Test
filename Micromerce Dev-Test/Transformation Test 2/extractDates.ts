@@ -9,9 +9,22 @@ type bonus = {
     end: string
 }
 
-const extractDates = (customer): bonus[] => {
-    return customer.ListeTimeStopBonusTime
-    // your code here
+export const extractDates = (customer) => {
+    if (!customer.ListeTimestopsBonustime || customer.ListeTimestopsBonustime.toLowerCase() === 'null') {
+        return []
+    }
+    return customer.ListeTimestopsBonustime
+        .map(e => e.trim)
+        .split('|')
+        .map((e) => e.trim())
+        .map((e) => {
+            const bothDates = e.split('-').map(e => e.trim)
+            return {
+                startDate: e[0],
+                endDate: e[1]
+            }
+        }
+        )
 }
 
 console.log(extractDates(customer1))
