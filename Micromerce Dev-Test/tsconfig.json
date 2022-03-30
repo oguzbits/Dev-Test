@@ -1,0 +1,9 @@
+{
+  "files": ["./customer/index.ts", "./studio/index.ts"],
+  "include": ["./types/**/*", "./types/ss.d.ts", "./types/sc.d.ts"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "DOM"]
+  }
+}
