@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    'customer/index': './customer/index.ts',
-    'studio/index': './studio/index.ts',
+    'toPositiveTemporal/toPositiveTemporal.ts': './toPositiveTemporal/toPositiveTemporal.ts',
+    'extractDates/extractDates.ts': './extractDates/extractDates.ts',
   },
   module: {
     rules: [

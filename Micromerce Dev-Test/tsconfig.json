@@ -1,9 +1,15 @@
 {
-  "files": ["./Tra", "./studio/index.ts"],
-  "include": ["./types/**/*", "./types/ss.d.ts", "./types/sc.d.ts"],
   "compilerOptions": {
-    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "ESNext",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "lib": ["ESNext", "DOM"]
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
   }
 }

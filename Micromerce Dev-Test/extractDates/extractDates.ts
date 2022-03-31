@@ -4,27 +4,24 @@
 // import customer4 from './customer4.json'
 
 //sollen wir das hier schon providen?
-type bonus = {
-    startDate: string,
-    endDate: string
-}
 
 const extractDates = (customer: any) => {
     if (!customer.ListeTimestopsBonustime || customer.ListeTimestopsBonustime.toLowerCase() === 'null') {
         return []
     }
     return customer.ListeTimestopsBonustime
-        .map(e => e.trim)
+        .map((e: string) => e.trim())
         .split('|')
-        .map((e) => e.trim())
-        .map((e) => {
-            const bothDates = e.split('-').map(el => el.trim)
-            if (bothDates[0].length !== 10 || bothDates[1].length !== 10) console.error('string length is invalid')
-            const result: bonus = {
-                startDate: bothDates[0],
-                endDate: bothDates[1]
+        .map((e: string) => e.trim())
+        .map((e: string) => {
+            const bothDates = e.split('-').map((el: string) => el.trim())
+            const startDate = bothDates[0]
+            const endDate = bothDates[1]
+            if (startDate.length !== 10 || endDate.length !== 10) return 'string length is invalid'
+            return {
+                startDate,
+                endDate
             }
-            return result
         })
 }
 

@@ -1,12 +1,7 @@
 {
-  "author": "Manuel Rodriguez",
-  "license": "ISC",
-  "name": "ml-transformation-wellyou",
+  "name": "micromerce-dev-test",
   "version": "0.1.0",
-  "description": "This package includes wellyou to ML transformations",
-  "keywords": [
-    "ml-transformation"
-  ],
+  "description": "Micromerce Dev Tests",
   "scripts": {
     "start:dev": "webpack --watch --mode=development --stats errors-warnings",
     "build:bundle": "esbuild customer/index.ts studio/index.ts --bundle --outdir=build",
@@ -21,6 +16,7 @@
     "esbuild": "^0.14.2",
     "jest": "^27.5.1",
     "json-ts": "^1.6.4",
+    "ts-jest": "^27.1.4",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.2",
     "webpack": "^5.68.0",
