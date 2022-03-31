@@ -1,6 +1,6 @@
 {
-  "files": ["./Tra", "./studio/index.ts"],
-  "include": ["./types/**/*", "./types/ss.d.ts", "./types/sc.d.ts"],
+  "files": ["Transformation_Test_1/toPositiveTemporal.ts", "./Transformation_Test_2/extractDates.ts"],
+  // "include": ["./types/**/*", "./types/ss.d.ts", "./types/sc.d.ts"],
   "compilerOptions": {
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

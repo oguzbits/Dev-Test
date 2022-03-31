@@ -1,11 +1,10 @@
-type PositiveTemporal = {
-    | { days: string}
+type PositiveTemporal = 
+    { days: string} 
     | { weeks: string}
     | { months: string}
     | { years: string}
     | { hours: string}
     | { minutes: string}
-}
 
 const toPositiveTemporal = (amount: string, unit: string, nonNegative): PositiveTemporal => {
     let amountAsInt: string = parseFloat(amount).toFixed(0);
