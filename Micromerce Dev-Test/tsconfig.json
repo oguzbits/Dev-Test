@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+=======
+  "files": ["Transformation_Test_1/toPositiveTemporal.ts", "./Transformation_Test_2/extractDates.ts"],
+  // "include": ["./types/**/*", "./types/ss.d.ts", "./types/sc.d.ts"],
+>>>>>>> upstream/main
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
